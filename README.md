@@ -9,7 +9,7 @@ Watch my *[DEMO VEDIOS!](https://drive.google.com/drive/folders/1Gi3bn9qPW_gR0IS
        - python semantics & syntax
   - [Weather Master](https://github.com/tyw4622/sc-project/blob/main/stanCode_projects/weather_master/weather_master.py)
        - python semantics & syntax
-  - [Breakout Game](https://github.com/tyw4622/sc-project/blob/main/stanCode_projects/break_out_game/breakout.py)
+  - [Breakout Game](https://github.com/tyw4622/sc-project/blob/main/stanCode_projects/break_out_game/breakoutgraphics.py)
        - animation & game designing
   - [Pedestrain Removing Application](https://github.com/tyw4622/sc-project/blob/main/stanCode_projects/my_photoshop/stanCodoshop.py)
        - image processing
