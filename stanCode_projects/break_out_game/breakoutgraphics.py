@@ -343,3 +343,24 @@ class BreakoutGraphics:
             obj_b = self.window.get_object_at(x=272.5 - j * 20, y=230)
             self.window.remove(obj_b)
         self.window.remove(self.label_load)
+
+from campy.gui.events.timer import pause
+
+FRAME_RATE = 1000 / 200 # 120 frames per second
+NUM_LIVES = 3			# Number of attempts
+
+        
+def main():
+    graphics = BreakoutGraphics()
+    graphics.set_num_lives(NUM_LIVES)
+
+    # Add animation loop here!
+    while True:
+        graphics.ball_move()
+        pause(FRAME_RATE)
+        if graphics.if_game_end():
+            break
+
+
+if __name__ == '__main__':
+    main()
