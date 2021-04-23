@@ -6,7 +6,7 @@ Watch my *[DEMO VEDIOS!](https://drive.google.com/drive/folders/1Gi3bn9qPW_gR0IS
 
 ## Projects Source Codes:
   - [Hangman Game](https://github.com/tyw4622/sc-project/blob/main/stanCode_projects/hang_man_game/hangman.py)
-    -python semantics & syntax
+      -python semantics & syntax
   - [Weather Master]()
     -python semantics & syntax
   - [Breakout Game](https://github.com/tyw4622/sc-project/blob/main/stanCode_projects/break_out_game/breakout.py)
