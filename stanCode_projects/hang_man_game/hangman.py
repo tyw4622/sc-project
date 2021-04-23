@@ -26,6 +26,11 @@ def main():
     each wrong guess will costs a chance. Users who figure out all will character of the word
     within given lives will win the game.
     """
+   print('========')
+    for i in range(6):
+        print('|')
+    print('')
+
     ans = random_word()
     n_turns = N_TURNS
     # count total character of the word
@@ -37,6 +42,14 @@ def main():
 
     while ans_now != ans:
         if n_turns == 0:
+            print('========')
+            print('|    |')
+            print('|  (0.0)')
+            print('|  ¬ # ¬')
+            print('|    #  ')
+            print('|   / \\ ')
+            print('|     ')
+            print('')
             print('You are completely hang :(')
             break
         else:
@@ -62,12 +75,69 @@ def main():
                 else:
                     print('You win!!')
             else:
+                n_turns-=1
+                if n_turns == N_TURNS-1:
+                    print('========')
+                    print('|    |')
+                    print('|   ')
+                    print('|  ')
+                    print('|  ')
+                    print('|  ')
+                    print('|  ')
+                    print('')
+                elif n_turns == N_TURNS - 2:
+                    print('========')
+                    print('|    |')
+                    print('|   ( )')
+                    print('|  ')
+                    print('|  ')
+                    print('|  ')
+                    print('|  ')
+                    print('')
+                elif n_turns==N_TURNS-3:
+                    print('========')
+                    print('|    |')
+                    print('|   ( )')
+                    print('|    #  ')
+                    print('|  ')
+                    print('|  ')
+                    print('|  ')
+                    print('')
+
+                elif n_turns == N_TURNS - 4:
+                    print('========')
+                    print('|    |')
+                    print('|   ( )')
+                    print('|    #  ')
+                    print('|    #  ')
+                    print('|  ')
+                    print('|  ')
+                    print('')
+                elif n_turns == N_TURNS - 5:
+                    print('========')
+                    print('|    |')
+                    print('|   ( )')
+                    print('|  ¬ # ¬ ')
+                    print('|    #  ')
+                    print('|  ')
+                    print('|  ')
+                    print('')
+                elif n_turns == N_TURNS - 6:
+                    print('========')
+                    print('|    |')
+                    print('|   ( )')
+                    print('|  ¬ # ¬ ')
+                    print('|    #  ')
+                    print('|   / \\ ')
+                    print('|  ')
+                    print('')
                 print('There is no ' + input_ch + '\'s' + ' in the word.')
-                n_turns -= 1
                 print('The word looks like: ' + ans_now)
                 print('You have ' + str(n_turns) + ' guesses left.')
                 
     print('The word was: ' + ans)
+
+
 
 
 def random_word():
