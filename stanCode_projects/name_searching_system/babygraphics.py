@@ -3,7 +3,7 @@ SC101 Baby Names Project
 Adapted from Nick Parlante's Baby Names assignment by
 Jerry Liao.
 
-YOUR DESCRIPTION HERE
+This program shows the line chart of the given names' anking form 1900 to 2010.
 """
 
 import tkinter
@@ -61,8 +61,6 @@ def draw_fixed_lines(canvas):
     """
     canvas.delete('all')            # delete all existing lines from the canvas
 
-    # Write your code below this line
-    #################################
     # bottom line
     canvas.create_line(GRAPH_MARGIN_SIZE, GRAPH_MARGIN_SIZE, CANVAS_WIDTH-GRAPH_MARGIN_SIZE,GRAPH_MARGIN_SIZE)
     # top line
@@ -89,10 +87,7 @@ def draw_names(canvas, name_data, lookup_names):
     """
     draw_fixed_lines(canvas)        # draw the fixed background grid
 
-    # Write your code below this line
-    #################################
     canvas.create_line(GRAPH_MARGIN_SIZE, GRAPH_MARGIN_SIZE, CANVAS_WIDTH - GRAPH_MARGIN_SIZE, GRAPH_MARGIN_SIZE)
-    # color = None
     color_index = 0
     count = -1         # for loop round count to decide when to reset the loop
     xy_lst = []        # list to store x_coordinate and y_coordinate of each point
@@ -134,7 +129,7 @@ def draw_names(canvas, name_data, lookup_names):
         xy_lst = []
 
 
-# main() code is provided, feel free to read through it but DO NOT MODIFY
+
 def main():
     # Load data
     name_data = babynames.read_files(FILENAMES)
@@ -152,27 +147,7 @@ def main():
     # processing user interactions and plotting data
     top.mainloop()
 
-# def main():
-#     # Load data
-#     # dir = r'C:\Users\tyw46\Desktop\SC101\Assignment\SC101_Assignment4_翁庭玉\SC101_Assignment4\data\full'
-#     # filenames = []
-#     # for filename in os.listdir(dir):
-#     #     filenames.append(os.path.join(dir, filename))
-#
-#     name_data = babynames.read_files(filenames)
-#
-#     # Create the window and the canvas
-#     top = tkinter.Tk()
-#     top.wm_title('Baby Names')
-#     canvas = gui.make_gui(top, CANVAS_WIDTH, CANVAS_HEIGHT, name_data, draw_names, babynames.search_names)
-#
-#     # Call draw_fixed_lines() once at startup so we have the lines
-#     # even before the user types anything.
-#     draw_fixed_lines(canvas)
-#
-#     # This line starts the graphical loop that is responsible for
-#     # processing user interactions and plotting data
-#     top.mainloop()
+
 
 if __name__ == '__main__':
     main()
