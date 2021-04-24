@@ -16,7 +16,8 @@ def main():
     Watching Tiger King trailer on Netflix brings me the idea of this work.
     """
     window = GWindow(width=1000, height=800, title='my_drawing_tiger.py')
-
+    
+    # Face
     face = GPolygon()
     face.add_vertex((315, 317))
     face.add_vertex((327, 436))
@@ -148,7 +149,21 @@ def main():
     face_l_t1.add_vertex((327, 524))
     face_l_t1.filled = True
     window.add(face_l_t1)
-
+    
+    # Chin
+    chin = GPolygon()
+    chin.add_vertex((441, 611))
+    chin.add_vertex((510, 599))
+    chin.add_vertex((574, 611))
+    chin.add_vertex((574, 636))
+    chin.add_vertex((510, 666))
+    chin.add_vertex((441, 636))
+    chin.filled = True
+    chin.fill_color = 'whitesmoke'
+    chin.color = 'silver'
+    window.add(chin)
+    
+    # Nose
     nose = GPolygon()
     nose.add_vertex((510, 207))
     nose.add_vertex((435, 253))
@@ -180,18 +195,6 @@ def main():
     nose_b_t.add_vertex((574, 611))
     nose_b_t.filled = True
     window.add(nose_b_t)
-
-    chin = GPolygon()
-    chin.add_vertex((441, 611))
-    chin.add_vertex((510, 599))
-    chin.add_vertex((574, 611))
-    chin.add_vertex((574, 636))
-    chin.add_vertex((510, 666))
-    chin.add_vertex((441, 636))
-    chin.filled = True
-    chin.fill_color = 'whitesmoke'
-    chin.color = 'silver'
-    window.add(chin)
 
     nose_b = GPolygon()
     nose_b.add_vertex((435, 238))
@@ -232,7 +235,8 @@ def main():
     nose_b3.add_vertex((505, 317))
     nose_b3.filled = True
     window.add(nose_b3)
-
+    
+    # Eyes
     l_eye_y = GPolygon()
     l_eye_y.add_vertex((395, 332))
     l_eye_y.add_vertex((370, 379))
@@ -268,7 +272,8 @@ def main():
     r_eye.add_vertex((585, 400))
     r_eye.filled = True
     window.add(r_eye)
-
+    
+    # Ears
     r_ear = GPolygon()
     r_ear.add_vertex((634, 242))
     r_ear.add_vertex((659, 264))
