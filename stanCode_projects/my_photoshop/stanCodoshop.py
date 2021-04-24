@@ -98,7 +98,6 @@ def solve(images):
     width = images[0].width
     height = images[0].height
     result = SimpleImage.blank(width, height)
-    ######## YOUR CODE STARTS HERE #########
     # Write code to populate image and create the 'ghost' effect
 
     for i in range(width):
@@ -112,7 +111,6 @@ def solve(images):
             result_pixel.green = best1.green
             result_pixel.blue = best1.blue
 
-    ######## YOUR CODE ENDS HERE ###########
     print("Displaying image!")
     result.show()
 
@@ -156,7 +154,6 @@ def load_images(dir):
 
 
 def main():
-    # (provided, DO NOT MODIFY)
     args = sys.argv[1:]
     # We just take 1 argument, the folder containing all the images.
     # The load_images() capability is provided above.
