@@ -3,21 +3,14 @@ File: hangman.py
 Name: Karen Wong
 -----------------------------
 This program plays hangman game.
-Users sees a dashed word, trying to
-correctly figure the un-dashed word out
-by inputting one character each round.
-If the user input is correct, show the
-updated word on console. Players have N_TURNS
-chances to try and win this game.
+Users sees a dashed word, trying to correctly figure the un-dashed word out by inputting one character each round.
+If the user input is correct, show the updated word on console. Players have N_TURNS chances to try and win this game.
 """
-
-
 import random
 
 
 # This constant controls the number of guess the player has.
 N_TURNS = 7
-
 
 
 def main():
@@ -138,8 +131,6 @@ def main():
     print('The word was: ' + ans)
 
 
-
-
 def random_word():
     """
     This function used to generate the random word.
@@ -165,6 +156,5 @@ def random_word():
         return "REFUND"
 
 
-#####  DO NOT EDIT THE CODE BELOW THIS LINE  #####
 if __name__ == '__main__':
     main()
